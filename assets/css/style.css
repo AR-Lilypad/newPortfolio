@@ -3,20 +3,186 @@
 }
 
 body  {
-width: 100%; 
-margin: 0;
-background-image: url("../images/oilWater.jpg");
-font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-color: #777;
+  margin: 0px;
+  padding: 0;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  color: rgb(122, 116, 116); 
+  transform-style: preserve-3d;
+  background: url("../images/backdrop2.png"), url("../images/ombreBG.jpg");
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  /* background-position: top; */
 }
 
-#parallaxLayer1 {
-  /* position: fixed; */
-  background: url("../images/transBubble.png"); 
-  
+h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  position: absolute;
+  text-align: left;
+  margin:10px;
+  padding-bottom: 20px; 
+  color: rgb(12, 2, 2);
 }
 
-#contentLayer {
+h2, p{
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  color: rgb(37, 29, 29);
+  padding: 10px;
+}
+
+main {
+  display: block;
+  overflow-x: hidden;
+  height: 100vh;
+  max-height: 100%;
+  perspective: 1px;
+  perspective-origin: center top;
+}
+
+#prlxLyr1 {
+  height: 22vh;  
+  transform-origin: left top;
+  transform: translateZ(-1px) scale(1.03);
+  position: relative;
+  padding: 5px 0;
+  box-sizing: border-box;
+  background: url("../images/prlxCircle.png") fixed no-repeat;
+}
+#prlxLyr2 {
+  height: 50vh;  
+  transform-origin: center;
+  transform: translateZ(-1px) scale(1.03);
+  position: relative;
+  padding: 5px 0;
+  box-sizing: border-box;
+  background: url("../images/pilates.png") fixed no-repeat 400px 400px;
+}
+
+.contentLayer1 {
   margin: 10% 25% 2% 25%;
   position: absolute;
+  transform: translateZ(0);
+  background: #fff;
+  opacity: .5
 }
+
+
+/*  Responsive design */
+@media screen and (max-width: 1300px) {
+  h1 { 
+    font-size: 1.75rem;
+  }
+  .contentLayer1 {
+    margin: 10px 30px 0 30px;
+    padding-bottom: 30px;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 980px) {
+
+.nav li { 
+    padding-right: 15px;
+}
+
+main {
+    margin: 6% 25% 2% 2%;
+}
+
+.nav { 
+    font-size: 14px;
+ }
+
+#nameInput  {
+    width: 300px;
+}
+
+#emailInput {
+    width: 300px;
+}
+
+#messageArea {
+    width:  300px;
+}
+@media (max-width: 768px) {
+.nav { 
+font-size: 12px;
+}
+
+.navlogo {
+margin: -2.1% 0 0 0;
+}
+
+.nav li { 
+padding-right: 15px;
+}
+
+main {
+margin: 6% 2% 2% 2%;
+}
+
+@media (max-width: 375px) {
+ .navcontainer {
+   width: 100%;
+ }
+ 
+  .nav { 
+  width: 100%; 
+  margin: auto; 
+  background-color: #17a2b8;
+ font-size: 13px;
+ }
+ 
+ .navlogo {
+  width: 100%;
+  margin: 0;
+  
+ }
+
+ .nav {
+   width: 100%;
+   margin: -5px 0 15px 0;
+   padding-right: 15px;
+   background-color: #fff;
+ }
+ 
+ .nav li { 
+ padding-right: 5px;
+ float: left;
+ }
+ 
+#nameInput  {
+    width: 300px;
+}
+    
+#emailInput {
+    width: 300px;
+}
+    
+#messageArea {
+    width:  300px;
+}
+  
+/*  portfolio images */
+
+.gallery 
+
+table  
+
+
+
+
+
+
+
+
+
