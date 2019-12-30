@@ -10,8 +10,9 @@ body  {
   transform-style: preserve-3d;
   background: url("../images/backdrop2.png"), url("../images/ombreBG.jpg");
   width: 100%;
+  height: 100%;
   background-size: 100%;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   /* background-position: top; */
 }
 
@@ -130,54 +131,69 @@ main {
 margin: 6% 2% 2% 2%;
 }
 
-@media (max-width: 375px) {
- .navcontainer {
-   width: 100%;
- }
- 
-  .nav { 
-  width: 100%; 
-  margin: auto; 
-  background-color: #17a2b8;
- font-size: 13px;
- }
- 
- .navlogo {
-  width: 100%;
-  margin: 0;
+@media (max-width: 400px) {
+  body  {
+    margin: 0px;
+    padding: 0;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: rgb(122, 116, 116); 
+    transform-style: preserve-3d;
+    background: url("../images/backdrop2.png"), url("../images/ombreBG.jpg");
+    width: 50%;
+  }
   
- }
-
- .nav {
-   width: 100%;
-   margin: -5px 0 15px 0;
-   padding-right: 15px;
-   background-color: #fff;
- }
- 
- .nav li { 
- padding-right: 5px;
- float: left;
- }
- 
-#nameInput  {
-    width: 300px;
-}
-    
-#emailInput {
-    width: 300px;
-}
-    
-#messageArea {
-    width:  300px;
-}
+  h1 {
+    font-size: 1rem;
+    margin:10px;
+    padding-bottom: 0px; 
+    color: rgb(12, 2, 2);
+  }
   
-/*  portfolio images */
-
-.gallery 
-
-table  
-
+  h2 {
+    font-size: 1rem;
+  }
+  
+  p {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: rgb(37, 29, 29);
+    padding-top: 0px;
+    font-size: 14px;
+  }
+  
+  main {
+    display: block;
+    overflow-x: hidden;
+    height: 100vh;
+    max-height: 100%;
+    perspective: 1px;
+    perspective-origin: center top;
+  }
+  
+  #prlxLyr1 {
+    height: 22vh;  
+    transform-origin: left top;
+    transform: translateZ(-1px) scale(1.03);
+    position: relative;
+    padding: 5px 0;
+    box-sizing: border-box;
+    background: url("../images/prlxCircle.png") fixed no-repeat;
+  }
+  #prlxLyr2 {
+    height: 50vh;  
+    transform-origin: center;
+    transform: translateZ(-1px) scale(1.03);
+    position: relative;
+    padding: 5px 0;
+    box-sizing: border-box;
+    background: url("../images/pilates.png") fixed no-repeat 400px 400px;
+  }
+  
+  .contentLayer1 {
+    width:150%;
+    margin: 15px 25px;
+    opacity: .9;
+  }
+  
 
 
 
