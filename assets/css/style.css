@@ -20,16 +20,29 @@ body  {
 
 /* plain navigation buttons */
 
-.nav {
-  background-color: #777;
+header {
+  position: fixed;
+  width: 100%;
+  /* margin: 75% 0 0 0; */
+  height: 75px;
+  background-color: #666;
+  border-bottom: 3px #17a2b8 solid;
+  left: 0px;
   opacity: .8;
+}   
+
+header p {
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+  margin-top: 1%;
 }
 
 ul.navBtns {
   list-style-type: none;
   margin-right: 23%;
   padding-right: 40px;
-  margin-top: 30px;
+  margin-top: 18px;
 }
 
 .nav li {
@@ -198,6 +211,26 @@ main {
 .icons {
     text-align: center;
     padding-top: 15%;
+}
+
+/* ====================footer============================================ */
+
+footer {
+  position: fixed;
+  width: 100%;
+  /* margin: 75% 0 0 0; */
+  height: 50px;
+  background-color: #666;
+  border-top: 3px #17a2b8 solid;
+  left: 0px;
+  opacity: .8;
+}   
+
+footer p {
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+  margin-top: 1%;
 }
 /* ===============responsive css========================================= */
 
