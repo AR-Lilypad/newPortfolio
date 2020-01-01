@@ -20,35 +20,32 @@ body  {
 
 /* plain navigation buttons */
 
-header {
-  position: fixed;
+#navBar {
+  position: sticky;
+  top: 0;
   width: 100%;
   /* margin: 75% 0 0 0; */
   height: 75px;
   background-color: #666;
   border-bottom: 3px #17a2b8 solid;
-  left: 0px;
   opacity: .8;
 }   
 
-header p {
-  font-size: 10px;
-  color: #fff;
-  text-align: center;
-  margin-top: 1%;
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-ul.navBtns {
-  list-style-type: none;
-  margin-right: 23%;
-  padding-right: 40px;
-  margin-top: 18px;
+.sticky + .contentLayer1 {
+  padding-top: 60px;
 }
 
-.nav li {
+#navBar a {
   float: right;
-  text-decoration: none;
-  list-style-type: none ;
+  margin-right: 25px;
+  padding-right: 15px;
+  margin-top: 18px;
 }
 
 /* set up for background and to set up parallax */
@@ -85,11 +82,13 @@ main {
 
 /* homepage short descript */
 .contentLayer1 {
-  margin: 10% 25% 2% 25%;
+  width: 65%;
+  margin: 10% 25% 2% 18%;
   position: absolute;
   transform: translateZ(0);
-  background: #fff;
-  /* opacity: .8; */
+  background: #233490;
+  opacity: .9;
+  color: #fff;
 }
 .contentLayer1 img {
     float: left;
@@ -102,16 +101,19 @@ main {
 .contentLayer1 h1 h2 {
   margin-left: 40px;
   margin-top: 20px;
+  padding-top: 10px
  }
 .contentLayer1 p {
   margin: 20px;
 } 
 #contentLayer2 {
-  width: 753px;
-  margin: 4% 3% 2% 25%;
+  width: 65%;
+  margin: 10% 25% 2% 18%;
   padding: 20px 0 20px 15px;
   position: absolute;
-  background: #fff;
+  background: #233490;
+  opacity: .9;
+  color: #fff;
 }
 
 /* ================projects page========================================= */
@@ -164,7 +166,7 @@ main {
     height: 100%;
     backface-visibility: hidden;
     overflow: hidden;
-    background: lightcoral;
+    background: #a0b65efd;
     color: #333;
     border-radius: 20px;
 }
@@ -260,7 +262,7 @@ footer p {
     font-size: 1.5rem;
     margin:15px;
     padding-bottom: 0px; 
-    color: rgb(12, 2, 2);
+    color:#fff;
   }
   
   h2 {
@@ -269,7 +271,7 @@ footer p {
   
   p {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    color: #000;
+    color: #fff;
     padding-top: 0px;
     font-size: 16px;
   }
@@ -305,7 +307,7 @@ footer p {
     
     p {
       font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-      color: #000;
+      color: #fff;
       padding-top: 0px;
       font-size: 16px;
     }
@@ -325,7 +327,7 @@ footer p {
     font-size: 1rem;
     margin:10px;
     padding-bottom: 0px; 
-    color: rgb(12, 2, 2);
+    color:#fff;
   }
   
   h2 {
@@ -333,7 +335,7 @@ footer p {
   }
   
   p {
-    color: #000;
+    color: #fff;
     padding-top: 0px;
     font-size: 14px;
   }
