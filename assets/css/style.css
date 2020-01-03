@@ -86,9 +86,9 @@ main {
   margin: 10% 25% 2% 18%;
   position: absolute;
   transform: translateZ(0);
-  background: #233490;
+  background: #f18344;
   opacity: .9;
-  color: #fff;
+  color: #233490;
 }
 .contentLayer1 img {
     float: left;
@@ -105,15 +105,16 @@ main {
  }
 .contentLayer1 p {
   margin: 20px;
+  font-weight: 700;
 } 
 #contentLayer2 {
   width: 65%;
   margin: 10% 25% 2% 18%;
   padding: 20px 0 20px 15px;
   position: absolute;
-  background: #233490;
+  background: #f18344;
   opacity: .9;
-  color: #fff;
+  color: #233490;
 }
 
 /* ================projects page========================================= */
@@ -165,10 +166,10 @@ main {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    overflow: hidden;
+    /* overflow: hidden; */
     background: #a0b65efd;
     color: #333;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .theFront img {
@@ -184,11 +185,11 @@ main {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    overflow: hidden;
+    /* overflow: hidden; */
     background: lightskyblue;
     color: #333;
     transform: rotateY(180deg);
-    border-radius: 20px;
+    border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
 }
