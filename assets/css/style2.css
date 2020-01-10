@@ -240,15 +240,15 @@
   
   
 
-  .contactBox {
+  .contactBox, .boxHeader {
     max-width: 65%;
-    background-color: #f4fcff;
-    color: #777;
+    background-color: #f18344;
+    color: #fff;
   }
 
   .call2Action {
     margin: 25% 22% 1% 15%;
-    background-color: #f4fcff;
+    background-color: #f18344;
   }
 
   #nameInput, #emailInput {
@@ -378,10 +378,14 @@
         opacity: .9;
       }
   
-  @media (max-width: 400px) {
-    body  {
-      width: 50%;
+  @media (min-width: 400px) {
+    .box {
+      width: 200%;
     }
+
+    #navBar {
+      width: 200%;
+    }   
     
     h1 {
       font-size: 1rem;
@@ -401,20 +405,54 @@
     }
     
     .contentLayer1 {
-      width:150%;
+      width: 150%;
       margin: 15px 25px;
       opacity: .9;
     }
-  © 2020 GitHub, Inc.
-  Terms
-  Privacy
-  Security
-  Status
-  Help
-  Contact GitHub
-  Pricing
-  API
-  Training
-  Blog
-  About
-  
+
+    #contentLayer2 {
+      width: 150%;
+      margin: 140px 15px 15px 25px;
+      position: absolute;
+      opacity: .9;
+    }
+    main {
+      width: 225%;
+    }  
+
+    .boxHeader {
+      margin-left: 15%;
+      padding: 5px 0 20px 15px;
+    }
+
+    .call2Action {
+      font-size: 14px;
+      padding: 20px 15px 25px 20px;
+    } 
+
+    .form-group {
+      padding: 10px 15px 10px 5px;
+    }
+    
+    #nameInput, #emailInput {
+      margin: 5px;
+      padding-right: 115px;
+    }
+
+    #messageArea{
+      padding-right: 130px;
+    } 
+
+    #submit_button {
+      margin: 10px 0 10px 20px;
+      padding: 10px 30px;
+    }
+
+    footer {
+      width: 200%;
+    }
+    
+    footer p{
+      padding-right: 10%;
+    }
+  }
