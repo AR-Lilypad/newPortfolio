@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>cards</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="box">
+    <div id="card">
+      <div class="card">
+        <div class="imgBx">
+          <img src="assets/images/nodeSqlLogo.png" alt="images">
+        </div>
+        <div class="details">
+          <h2>NODE.js / MYSQL<br><span>Bamazon</span></h2>
+          <button class="btn btn-light" id="toggle-btn"
+            onclick="window.location.href = 'https://youtu.be/osY74FCzmHA'">Click
+            for demo</button>
+        </div>
+      </div>
+      <div class="card-back">
+        <p class="Back Content"></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="imgBx">
+        <img src="assets/images/trainsched.PNG" alt="images">
+      </div>
+      <div class="details">
+        <h2>FIREBASE<br><span>Train Schedule</span></h2>
+        <button class="btn btn-light" id="toggle-btn"
+        onclick="window.location.href = 'https://ar-lilypad.github.io/trainSchedule/'">Click
+        for demo</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="imgBx">
+        <img src="assets/images/mandelbrot.jpg" alt="Giphtastic">
+      </div>
+      <div class="details">
+        <h2>AJAX<br><span>Giphy-tastic</span></h2>
+        <button class="btn btn-light" id="toggle-btn"
+        onclick="window.location.href = 'https://ar-lilypad.github.io/GIFTastic-AR/'">Click
+        for demo</button>
+      </div>
+    </div>
+
+    <!-- </div>
+    <div class="box"> -->
+    <div class="card">
+      <div class="imgBx">
+        <img src="assets/images/Project2.PNG" alt="images">
+      </div>
+      <div class="details">
+        <h2>Nod| MySQL<br><span>Furever Friend | Project 2</span></h2>
+        <button class="btn btn-light" id="toggle-btn"
+        onclick="window.location.href = 'https://pure-coast-39097.herokuapp.com/'">Click
+        for demo</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="imgBx">
+        <img src="assets/images/weatherWear2.PNG" alt="images">
+      </div>
+      <div class="details">
+        <h2>DATA & AJAX<br><span>Weather Wear</span></h2>
+        <button class="btn btn-light" id="toggle-btn"
+        onclick="window.location.href = 'https://ar-lilypad.github.io/project--1/'">Click
+        for demo</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="imgBx">
+        <img src="assets/images/honeycomb.PNG" alt="images">
+      </div>
+      <div class="details">
+        <h2>NODE.JS<br><span>LIRI</span></h2>
+        <button class="btn btn-light" id="toggle-btn"
+        onclick="window.location.href = 'https://youtu.be/A1qhvWYC_Uo'">Click
+        for demo</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+
+  <script type="text/javascript">
+    $("#toggle-btn").click(function () {
+      $("#card").flip('toggle');
+    })
+  </script>
+
+</body>
+
+</html>
+
