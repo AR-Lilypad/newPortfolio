@@ -16,136 +16,143 @@
 </head>
 
 <body>
-  <!--  <div class="topnav" id="myTopnav"></div> --> 
-  <div class="navButtons" id="navBar" >
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i></a>
-    <a href="#contact"><img src="assets/images/mailIcon.png" alt="contact us"> </a>
-    <a href="#contentLayer2"><img src="assets/images/portfolio.png" alt="project page"> </a>
-    <a href="contentLayer1"><img src="assets/images/homeIcon.png" alt="home page"> </a>
+  <div id="container1">
+    <div id="navigation">
+      <div class="navButtons" id="navBar">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i></a>
+        <a href="#contact"><img src="assets/images/mailIcon.png" alt="contact us"> </a>
+        <a href="#contentLayer2"><img src="assets/images/portfolio.png" alt="project page"> </a>
+        <a href=".homeIntro"><img src="assets/images/homeIcon.png" alt="home page"> </a>
+      </div>
+    </div>
   </div>
 
-  <a><div class="contentLayer1"></a>
-    <img src="assets/images/agrItaly.jpg">
-    <br><br>
-    <h2>ANGELA'S WEB AND CODING PROJECTS</h2> <br>
-    <h2>Your web is our playground!</h2>
-    <hr>
-    <p> Currently attending the Penn LPS Coding Boot Camp through Trilogy Education, I'm a junior developer
-      honing new skill sets in web development. The course offers an intense immersion into Front End and
-      Back End technologies: HTML5, CSS3, JavaScript, jQuery, MongoDB, Node.js, React.js, MySQL, and AJAX.
-      We're also incorporating additional libraries such as Bootstrap and encouraged to explore new
-      technologies.</p>
+  <div id="container2">
+    <div class="contentLayer1">
+      <a class="homeIntro"></a>
 
-    <p>So, We're front end developers with full stack capability. Let's get working on your new application.
-      Customer service oriented, we have a passion for strategizing with you to design and build
-      beautiful, functional website applications to raise your brand awareness and generate genuine customer
-      connections.</p>
-    </p>
+      <img src="assets/images/agrItaly.jpg">
+      <br><br>
+      <h2>ANGELA'S WEB AND CODING PROJECTS</h2> <br>
+      <h2>Your web is our playground!</h2>
+      <hr>
+      <p> Currently attending the Penn LPS Coding Boot Camp through Trilogy Education, I'm a junior developer
+        honing new skill sets in web development. The course offers an intense immersion into Front End and
+        Back End technologies: HTML5, CSS3, JavaScript, jQuery, MongoDB, Node.js, React.js, MySQL, and AJAX.
+        We're also incorporating additional libraries such as Bootstrap and encouraged to explore new
+        technologies.</p>
+
+      <p>So, We're front end developers with full stack capability. Let's get working on your new application.
+        Customer service oriented, we have a passion for strategizing with you to design and build
+        beautiful, functional website applications to raise your brand awareness and generate genuine customer
+        connections.</p>
+      </p>
+    </div>
   </div>
 
   <div id="prlxLyr1"> </div>
   <div id="prlxLyr2"> </div>
 
-  <a id="contentLayer2">
-    <h2>Angela's Web Building Projects <i>(Attempts)</i></h2>
-    <p>With multiple coinciding clients and assignment, here's a taste of our achievements:</p>
-    <hr>
-  </a>
-  <div id="prlxLyr3"> </div>
-  <div id="prlxLyr4"> </div>
+  <div id="container3">
+    <a id="contentLayer2">
+      <h2>Angela's Web Building Projects <i>(Attempts)</i></h2>
+      <p>With multiple coinciding clients and assignment, here's a taste of our achievements:</p>
+      <hr>
+    </a>
+    <div id="prlxLyr3"> </div>
+    <div id="prlxLyr4"> </div>
 
-  <!-- ===============================projects======================================================== -->
-  
-  <div class="box">
-    <div id="card">
+    <!-- ===============================projects======================================================== -->
+    <div class="box">
+      <div id="card">
+        <div class="card">
+          <div class="imgBx">
+            <img src="assets/images/nodeSqlLogo.png" alt="images">
+          </div>
+          <div class="details">
+            <h2>NODE.js / MYSQL<br><span>Bamazon</span></h2>
+            <button class="btn btn-light" id="toggle-btn"
+              onclick="window.location.href = 'https://youtu.be/osY74FCzmHA'">Click
+              for demo</button>
+          </div>
+        </div>
+        <div class="card-back">
+          <p class="Back Content"></p>
+        </div>
+      </div>
+
       <div class="card">
         <div class="imgBx">
-          <img src="assets/images/nodeSqlLogo.png" alt="images">
+          <img src="assets/images/trainsched.PNG" alt="images">
         </div>
         <div class="details">
-          <h2>NODE.js / MYSQL<br><span>Bamazon</span></h2>
+          <h2>FIREBASE<br><span>Train Schedule</span></h2>
           <button class="btn btn-light" id="toggle-btn"
-            onclick="window.location.href = 'https://youtu.be/osY74FCzmHA'">Click
+            onclick="window.location.href = 'https://ar-lilypad.github.io/trainSchedule/'">Click
             for demo</button>
         </div>
       </div>
-      <div class="card-back">
-        <p class="Back Content"></p>
+
+      <div class="card">
+        <div class="imgBx">
+          <img src="assets/images/mandelbrot.jpg" alt="Giphtastic">
+        </div>
+        <div class="details">
+          <h2>AJAX<br><span>Giphy-tastic</span></h2>
+          <button class="btn btn-light" id="toggle-btn"
+            onclick="window.location.href = 'https://ar-lilypad.github.io/GIFTastic-AR/'">Click
+            for demo</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="imgBx">
+          <img src="assets/images/Project2.PNG" alt="images">
+        </div>
+        <div class="details">
+          <h2>Nod| MySQL<br><span>Furever Friend | Project 2</span></h2>
+          <button class="btn btn-light" id="toggle-btn"
+            onclick="window.location.href = 'https://pure-coast-39097.herokuapp.com/'">Click
+            for demo</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="imgBx">
+          <img src="assets/images/weatherWear2.PNG" alt="images">
+        </div>
+        <div class="details">
+          <h2>DATA & AJAX<br><span>Weather Wear</span></h2>
+          <button class="btn btn-light" id="toggle-btn"
+            onclick="window.location.href = 'https://ar-lilypad.github.io/project--1/'">Click
+            for demo</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="imgBx">
+          <img src="assets/images/honeycomb.PNG" alt="images">
+        </div>
+        <div class="details">
+          <h2>NODE.JS<br><span>LIRI</span></h2>
+          <button class="btn btn-light" id="toggle-btn"
+            onclick="window.location.href = 'https://youtu.be/A1qhvWYC_Uo'">Click
+            for demo</button>
+        </div>
       </div>
     </div>
-
-    <div class="card">
-      <div class="imgBx">
-        <img src="assets/images/trainsched.PNG" alt="images">
-      </div>
-      <div class="details">
-        <h2>FIREBASE<br><span>Train Schedule</span></h2>
-        <button class="btn btn-light" id="toggle-btn"
-          onclick="window.location.href = 'https://ar-lilypad.github.io/trainSchedule/'">Click
-          for demo</button>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="imgBx">
-        <img src="assets/images/mandelbrot.jpg" alt="Giphtastic">
-      </div>
-      <div class="details">
-        <h2>AJAX<br><span>Giphy-tastic</span></h2>
-        <button class="btn btn-light" id="toggle-btn"
-          onclick="window.location.href = 'https://ar-lilypad.github.io/GIFTastic-AR/'">Click
-          for demo</button>
-      </div>
-    </div>
-
-    <!-- </div>
-        <div class="box"> -->
-    <div class="card">
-      <div class="imgBx">
-        <img src="assets/images/Project2.PNG" alt="images">
-      </div>
-      <div class="details">
-        <h2>Nod| MySQL<br><span>Furever Friend | Project 2</span></h2>
-        <button class="btn btn-light" id="toggle-btn"
-          onclick="window.location.href = 'https://pure-coast-39097.herokuapp.com/'">Click
-          for demo</button>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="imgBx">
-        <img src="assets/images/weatherWear2.PNG" alt="images">
-      </div>
-      <div class="details">
-        <h2>DATA & AJAX<br><span>Weather Wear</span></h2>
-        <button class="btn btn-light" id="toggle-btn"
-          onclick="window.location.href = 'https://ar-lilypad.github.io/project--1/'">Click
-          for demo</button>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="imgBx">
-        <img src="assets/images/honeycomb.PNG" alt="images">
-      </div>
-      <div class="details">
-        <h2>NODE.JS<br><span>LIRI</span></h2>
-        <button class="btn btn-light" id="toggle-btn"
-          onclick="window.location.href = 'https://youtu.be/A1qhvWYC_Uo'">Click
-          for demo</button>
-      </div>
-    </div>
-
   </div>
   <div id="prlxLyr3"> </div>
   <div id="prlxLyr4"> </div>
   <!-- ==================================Contact Form ================================================ -->
 
-  <main>
+  <div id="container4">
     <div class="contactME">
       <div class="call2Action">
-        <a id="contact"><h2>Contact Us</h2></a>
+        <a id="contact">
+          <h2>Contact Us</h2>
+        </a>
         <p>Contact us for more information about the work you see on the site. </p>
         <hr>
         <form>
@@ -176,7 +183,8 @@
         </form>
       </div>
     </div>
-  </main>
+  </div>
+
 
 
   <!--sticky footer-->
