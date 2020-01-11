@@ -9,19 +9,23 @@
   <link rel="stylesheet" type="text/css" href="assets/css/style2.css">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 </head>
 
 <body>
-  <div id="navBar">
-    <a href="contact.html"><img src="assets/images/mailIcon.png" alt="contact us"></a>
+  <!--  <div class="topnav" id="myTopnav"></div> --> 
+  <div class="navButtons" id="navBar" >
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i></a>
+    <a href="#contact"><img src="assets/images/mailIcon.png" alt="contact us"> </a>
     <a href="#contentLayer2"><img src="assets/images/portfolio.png" alt="project page"> </a>
-    <a href="home.html"><img src="assets/images/homeIcon.png" alt="home page"> </a>
+    <a href="contentLayer1"><img src="assets/images/homeIcon.png" alt="home page"> </a>
   </div>
 
-  <div class="contentLayer1">
+  <a><div class="contentLayer1"></a>
     <img src="assets/images/agrItaly.jpg">
     <br><br>
     <h2>ANGELA'S WEB AND CODING PROJECTS</h2> <br>
@@ -50,7 +54,9 @@
   </a>
   <div id="prlxLyr3"> </div>
   <div id="prlxLyr4"> </div>
+
   <!-- ===============================projects======================================================== -->
+  
   <div class="box">
     <div id="card">
       <div class="card">
@@ -139,27 +145,27 @@
   <main>
     <div class="contactME">
       <div class="call2Action">
-        <h2>Contact Us</h2>
+        <a id="contact"><h2>Contact Us</h2></a>
         <p>Contact us for more information about the work you see on the site. </p>
-<hr>
+        <hr>
         <form>
           <div class="form-row">
-            <div class="form-group col-md-8">
-              <label for="nameInput" class="col-sm-8 col-form-label">Your Full Name: </label><br>
+            <div class="form-group col-xs-12 col-sm-6">
+              <label for="nameInput" class="col-sm-6 col-form-label">Your Full Name: </label><br>
               <input type="text" class="form-control" id="nameInput" placeholder="">
             </div>
           </div>
           <br>
           <div class="form-row">
-            <div class="form-group col-md-8">
-              <label for="emailInput" class="col-sm-8 col-form-label">Email: </label><br>
+            <div class="form-group col-xs-12 col-sm-6">
+              <label for="emailInput" class="col-sm-6 col-form-label">Email: </label><br>
               <input type="email" class="form-control" id="emailInput" placeholder="">
             </div>
           </div>
           <br>
           <div class="form-row">
-            <div class="form-group col-md-8">
-              <label for="messageTextarea1" class="col-sm-8 col-form-label">Your Message: </label><br>
+            <div class="form-group col-xs-12 col-sm-6">
+              <label for="messageTextarea1" class="col-sm-6 col-form-label">Your Message: </label><br>
               <textarea class="form-control" id="messageArea" rows="6"></textarea>
             </div>
           </div>
@@ -170,7 +176,6 @@
         </form>
       </div>
     </div>
-    </div>
   </main>
 
 
@@ -178,7 +183,7 @@
   <footer>
     <p>Copyright &copy;</p>
   </footer>
-  
+
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="app.js"></script>
@@ -191,6 +196,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+
 </body>
 
 </html>

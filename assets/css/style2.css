@@ -20,16 +20,20 @@
   
   /* plain navigation buttons */
   
-  #navBar {
+  .navButtons {
     position: sticky;
     top: 0;
     width: 100%;
-    /* margin: 75% 0 0 0; */
     height: 75px;
     background-color: #666;
     border-bottom: 3px #17a2b8 solid;
     opacity: .8;
-  }   
+  } 
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
   
   .sticky {
     position: fixed;
@@ -41,12 +45,24 @@
     padding-top: 60px;
   }
   
-  #navBar a {
+  .navButtons a {
     float: right;
+    display: block;
     margin-right: 25px;
     padding-right: 15px;
     margin-top: 18px;
   }
+
+  .navButtons a.hover {
+    opacity: .8;
+  }
+  
+  /* Hide hamburger link  */
+  .navButtons .icon {
+    display: none;
+  }
+
+  
   
   /* set up for background and to set up parallax */
   main {
@@ -89,6 +105,7 @@
     background: #f18344;
     opacity: .9;
     color: #233490;
+    text-decoration: none;
   }
 
   .contentLayer1 img {
@@ -120,6 +137,10 @@
     background: #f18344;
     /* opacity: .9; */
     color: #233490;
+  }
+  #contentLayer2 p{
+    margin-left: 20%;
+    padding-left: 20px; 
   }
   
   /* ================projects page========================================= */
@@ -186,7 +207,7 @@
     position: absolute;
     top: 10px;
     left: 10px;
-    bottom: 10px;
+    bottom: 3px;
     right: 10px;
     background: #222;
     transition: 0.5s;
@@ -244,9 +265,9 @@
   
   .contactMe {
     width: auto;
-    
+    text-decoration: none;
   }
-  
+    
   .call2Action {
     margin: 0% 25% 1% 25%;
     padding-left: 13%;
@@ -301,9 +322,9 @@
     text-align: center;
     margin-top: 1%;
   }
-  /* ===============responsive css========================================= */
-  
-  /*  Responsive design */
+
+  /* ===============Responsive design-responsive css========================================= */
+
   @media screen and (max-width: 1300px) {
     h1 { 
       font-size: 1.75rem;
@@ -318,7 +339,7 @@
       width: 75%;
     }
   }
-  
+  /*---------------------------------------------*/
   @media (max-width: 980px) {
   
     body  {
@@ -329,7 +350,7 @@
       font-size: 1.5rem;
       margin:15px;
       padding-bottom: 0px; 
-      color:#fff;
+      color:#233490;
     }
     
     h2 {
@@ -338,7 +359,7 @@
     
     p {
       font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-      color: #fff;
+      color: #233490;
       padding-top: 0px;
       font-size: 16px;
     }
@@ -354,7 +375,7 @@
       margin-right: 7%;
       padding-right: 40px;
     }
-  
+  /*---------------------------------------------*/
     @media (max-width: 880px) {
   
       body  {
@@ -374,7 +395,7 @@
       
       p {
         font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-        color: #fff;
+        color: #233490;
         padding-top: 0px;
         font-size: 16px;
       }
@@ -384,64 +405,88 @@
         margin: 56px 56px;
         opacity: .9;
       }
-  
+  /*---------------------------------------------*/
   @media (min-width: 320px) {
     .box {
-      width: 200%;
+      width: 100%;
     }
 
     #navBar {
-      width: 200%;
+      height: 50px;
     }   
-    
-    h1 {
-      font-size: 1rem;
-      margin:10px;
-      padding-bottom: 0px; 
-      color:#fff;
+
+    img {
+      float: left;
+      margin: -10px;
+      padding: -10px;
     }
     
-    h2 {
-      font-size: 1rem;
+    .contentLayer1 h2 {
+      font-size: 20px;
+      margin-left: 75px;
+      padding-bottom: -10px; 
     }
     
     p {
-      color: #fff;
+      color: #233490;
       padding-top: 0px;
       font-size: 14px;
+      font-weight: 300;
     }
     
     .contentLayer1 {
-      width: 150%;
-      margin: 15px 25px;
+      margin: auto auto;
       opacity: .9;
     }
 
     #contentLayer2 {
-      width: 150%;
-      margin: 140px 15px 15px 25px;
+      margin: 60% 1% 0 1%;
       position: absolute;
       opacity: .9;
     }
-    main {
-      width: 225%;
-    }  
 
-    .boxHeader {
-      margin-left: 15%;
-      padding: 5px 0 20px 15px;
+    #contentLayer2 h2 {
+      font-size: 20px;
+      margin-left: -50%;
+      padding-bottom: -10px; 
     }
 
-    .call2Action {
+    #contentLayer2 p {
       font-size: 14px;
-      padding: 20px 15px 25px 20px;
-    } 
-
-    .form-group {
-      padding: 10px 15px 10px 5px;
+      margin-left: 0%;
+      margin-bottom: 0;
+      padding-bottom: -10px; 
     }
     
-    #nameInput, #emailInput {
+    .box {
+      margin: 1% auto;
+      border-top: 40px solid  #f18344;
+      border-bottom: 15px solid  #f18344;
+      color: #233490;
+    }
+    
+    /* -----contact form--- */
+    /* .contactMe {
+      width: 100%;
+    }
+
+    /* .call2Action {
+      max-width: 180%;
+    }   */
+    /*.call2Action h2 {
+      text-align: left;
+    }
+
+    .call2Action p {
+      font-size: 14px;
+      padding: 20px 15px 25px 5px;
+    } 
+
+     .form-group {
+      padding: 10px 15px 10px 5px;
+    }
+     */
+    /* #nameInput, #emailInput {
       margin: 5px;
       padding-right: 115px;
     }
@@ -453,10 +498,40 @@
     #submit_button {
       margin: 10px 0 10px 20px;
       padding: 10px 30px;
-    }
+    } */
 
+    /* reg size */
+  
+    /* #nameInput, #emailInput {
+      padding: 0 40%;
+    }
+  
+    #messageArea{
+      padding-right: 375px;
+    }
+  
+    #submit {
+      padding-bottom: 15px;
+    }
+    #submit_button {
+      padding: 10px 30px;
+      background-color: #17a2b8;
+      font-size: 15px;
+      font-weight: bold;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+  
+    #submit_button:hover {
+      background-color: #f6e7c5;
+      color: #777;
+      padding: 11px 31px; 
+      transition: background-color 0.8s ease;
+    } */
+    /* end reg size */
+    /* ----footer--- */
     footer {
-      width: 200%;
+      width: 100%;
     }
     
     footer p {
