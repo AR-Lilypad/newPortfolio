@@ -421,9 +421,6 @@
       margin: 25% 0 10% 20%;
     }
     
-    
-    
-    
     #navBar {
       width: 100%;
       margin: -55px 0 20px 0;
@@ -497,9 +494,15 @@
     /* transform: rotate(10deg); */
     box-shadow: none;
     }
-    .call2Action {
+
+    .call2Action  {
       margin: 0 -150% 1% 10%;
     }
+
+    .call2Action, #contact  {
+      text-align: left;
+    }
+
     .card .imgBx {
       top: 20px;
       right: 2px;
