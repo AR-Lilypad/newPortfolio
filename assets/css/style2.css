@@ -17,9 +17,17 @@
     background-repeat: repeat; 
     /* background-position: top; */
   }
+
+  
   
   /* plain navigation buttons */
   
+  navigation {
+    width: 100%;
+    position: absolute;
+    top: o;
+  }
+
   .navButtons {
     position: sticky;
     top: 0;
@@ -407,14 +415,21 @@
       }
   /*---------------------------------------------*/
   @media (min-width: 320px) {
-    .box {
-      width: 100%;
+    #container2, #container3, #container4 {
+      /* justify-content: right;
+      align-items: right; */
+      margin: 25% 0 10% 20%;
     }
-
+    
+    
+    
+    
     #navBar {
+      width: 100%;
+      margin: -55px 0 20px 0;
       height: 50px;
     }   
-
+    
     img {
       float: left;
       margin: -10px;
@@ -438,19 +453,19 @@
       margin: auto auto;
       opacity: .9;
     }
-
+    
     #contentLayer2 {
       margin: 60% 1% 0 1%;
       position: absolute;
       opacity: .9;
     }
-
+    
     #contentLayer2 h2 {
       font-size: 20px;
       margin-left: -50%;
       padding-bottom: -10px; 
     }
-
+    
     #contentLayer2 p {
       font-size: 14px;
       margin-left: 0%;
@@ -459,11 +474,38 @@
     }
     
     .box {
-      margin: 1% auto;
-      border-top: 40px solid  #f18344;
-      border-bottom: 15px solid  #f18344;
+      width: 100%;
+      background: none;
+      grid-template-columns: none;
+      margin: 150px 0 0 100px;
       color: #233490;
+      border: none;
     }
+
+    .card {
+      box-shadow: none;
+    }
+    .cardBack {
+    box-shadow: none;
+   }
+
+    .card:hover:before {
+    /* transform: rotate(20deg); */
+    box-shadow: none;
+    }
+    .card:hover:after {
+    /* transform: rotate(10deg); */
+    box-shadow: none;
+    }
+    .call2Action {
+      margin: 0 -150% 1% 10%;
+    }
+    .card .imgBx {
+      top: 20px;
+      right: 2px;
+      left: 20px;
+      background: #fff;
+      }
     
     /* -----contact form--- */
     /* .contactMe {
